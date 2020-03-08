@@ -1,0 +1,70 @@
+.rectangle-up{
+  position: relative;
+}
+.rectangle-up:before{
+  content: '';
+  display: block;
+  position: absolute;
+  top:10px;
+  right:5px;
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 14px solid black;
+}
+.rectangle-down{
+  position: relative;
+}
+.rectangle-down:before{
+    content: '';
+    display: block;
+    position: absolute;
+    top:10px;
+    right:5px;
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 14px solid black;
+}
+.wrapper{
+  overflow: hidden;
+}
+
+.component-wrapper{
+ padding-top: 40px ;
+  margin: 0 auto;
+  width: 768px;
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1000px){
+  .component-wrapper{
+  	width: 900px;
+  }
+}
+
+@media only screen and (min-width: 1001px) and (max-width: 1200px){
+    .component-wrapper{
+        width: 1000px;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1400px){
+    .component-wrapper{
+        width: 1200px;
+    }
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1600px){
+    .component-wrapper{
+        width: 1400px;
+    }
+}
+
+@media only screen and (min-width: 1601px){
+    .component-wrapper{
+        width: 1600px;
+    }
+}
+
